@@ -7,6 +7,18 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Este es mi template</h1>
+
+    {% if valor_aleatorio >= 5 %}
+    <p>
+        Valor aleatorio: {{valor_aleatorio}}
+    </p>
+    {% endif %}
+
+    <p>
+        Listado de valores:
+        {% for valor in rango %}
+        <li>{{valor}}</li>
+        {% endfor %}
+    </p>
 </body>
 </html>
